@@ -12,41 +12,6 @@ The project contains the following key files:
 - **Model Training.ipynb**: This notebook contains the implementation of the image captioning model. It includes model architecture, training loop, loss function, and evaluation metrics. The model is trained on the prepared dataset to generate accurate and relevant product descriptions.
 - **finalmenproducts.xlsx**: This Excel file contains the final set of products used for training and testing the model. It includes columns for `id`, `url`, `price`, `description`, and `image`. The `image` column is used as input for the model, and the generated descriptions are compared against the existing `description` column for validation.
 
-## Project Workflow!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-1. **Data Preparation**: 
-   - Load the dataset from `finalmenproducts.xlsx`.
-   - Preprocess the images (e.g., resizing, normalization) and descriptions (e.g., tokenization, padding).
-   - Split the data into training and validation sets.
-
-2. **Model Training**:
-   - Define the architecture of the image captioning model (e.g., using CNNs for image feature extraction and RNNs for sequence generation).
-   - Train the model on the prepared dataset, optimizing for accuracy and relevance of the generated captions.
-   - Save the trained model for later use.
-
-3. **Product Description Generation**:
-   - Load the trained model and apply it to the images in `finalmenproducts.xlsx`.
-   - Generate descriptions for each product image.
-   - Compare the generated descriptions with the existing descriptions in the dataset.
-   - !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-Below is the revised README file that includes details about the code snippets you provided:
-
----
-
-# Product Description Generator using Image Captioning Models
-
-## Project Overview
-
-This project aims to automate the generation of product descriptions by leveraging image captioning models. By providing an image of a product, the model generates a descriptive text that can be used in e-commerce listings, catalogs, or marketing materials. The project is structured into data preparation, model training, and testing using a sample dataset.
-
-## Directory Structure
-
-The project contains the following key files:
-
-- **Data Preparation.ipynb**: This notebook is used to prepare the dataset for training. It includes data cleaning, preprocessing, and necessary transformations to make the data suitable for model input.
-- **Model Training.ipynb**: This notebook contains the implementation of the image captioning model. It includes model architecture, training loop, loss function, and evaluation metrics. The model is trained on the prepared dataset to generate accurate and relevant product descriptions.
-- **finalmenproducts.xlsx**: This Excel file contains the final set of products used for testing the model. It includes columns for `id`, `url`, `price`, `description`, and `image`. The `image` column is used as input for the model, and the generated descriptions are compared against the existing `description` column for validation.
-
 ## Code Explanation
 
 ### 1. **Data Preparation (`Data Preparation.ipynb`)**
